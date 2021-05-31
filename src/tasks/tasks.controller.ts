@@ -39,7 +39,7 @@ export class TasksController {
   updatetaskStatus(
     @Param('id') id: string,
     @Body('status') status: TaskStatus,
-  ) {
+  ): Task {
     return this.tasksService.updateTaskStatus(id, status);
   }
 
